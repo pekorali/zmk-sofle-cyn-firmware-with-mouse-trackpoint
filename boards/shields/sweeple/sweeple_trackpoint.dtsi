@@ -36,8 +36,6 @@ chosen {
         , <&pro_micro 14 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 16 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro 10 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  2 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
-        , <&pro_micro  3 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro  4 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro  5 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
         , <&pro_micro  6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>
@@ -60,9 +58,9 @@ chosen {
 
 #define MOUSE_PS2_DRIVER_UART
 
-#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 1 GPIO_ACTIVE_HIGH>
-#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 0 GPIO_ACTIVE_HIGH>
-#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 9 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SCL_PRO_MICRO <&pro_micro 2 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_SDA_PRO_MICRO <&pro_micro 3 GPIO_ACTIVE_HIGH>
+#define MOUSE_PS2_PIN_RST_PRO_MICRO <&pro_micro 0 GPIO_ACTIVE_HIGH>
 #define MOUSE_PS2_PIN_SDA_PINCTRL <NRF_PSEL(UART_RX, 0, 8)>
 #define MOUSE_PS2_UART_BAUD_RATE <14400>
 

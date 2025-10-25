@@ -10,5 +10,5 @@
        
 &trackpoint_listener {
     status = "okay";
-    input-processors = <&zip_xy_swap_mapper>;
+    //input-processors = <&zip_xy_swap_mapper>;
 };

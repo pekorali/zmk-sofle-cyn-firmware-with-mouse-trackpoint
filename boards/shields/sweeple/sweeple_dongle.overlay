@@ -9,12 +9,6 @@
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
-&zip_temp_layer {
-    require-prior-idle-ms = <1000>;
-};
-
 &trackpoint_listener {
     status = "okay";
-    //input-processors = <&zip_xy_swap_mapper>;
-    input-processors = <&zip_temp_layer 5 750>;
 };

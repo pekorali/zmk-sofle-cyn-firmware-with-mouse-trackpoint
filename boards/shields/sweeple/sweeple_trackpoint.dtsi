@@ -419,9 +419,6 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 };
 
 &mouse_ps2 {
-};
-
-&mouse_ps2 {
     status = "okay";
 	disable-clicking;
     tp-sensitivity = <70>; 
@@ -440,9 +437,9 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
   status = "okay";
 };
 
-&uart_ps2 {
-  status="okay";
-};
+//&uart_ps2 {
+//  status="okay";
+//};
 
 &gpio_ps2 {
   status="okay";

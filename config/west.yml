@@ -1,18 +1,21 @@
 manifest:
   remotes:
-    - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
-    - name: badjeff
-      url-base: https://github.com/badjeff
+    #- name: zmkfirmware
+    #  url-base: https://github.com/zmkfirmware
+    - name: petejohanson
+      url-base: https://github.com/petejohanson
+    - name: pekorali
+      url-base: https://github.com/pekorali
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      #revision: v0.3
+      revision: core/main-work-queue
       import: app/west.yml
 
     # Module for PS/2 mouse & TP driver
     - name: kb_zmk_ps2_mouse_trackpoint_driver
-      remote: badjeff
+      remote: pekorali
       revision: main
 
   self:
